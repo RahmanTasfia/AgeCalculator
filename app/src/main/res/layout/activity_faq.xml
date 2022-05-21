@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".faq">
+
+    <TextView
+        android:id="@+id/faqpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="FAQ"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Can i use the app for free?"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/q1"
+        android:layout_marginBottom="15sp"
+        android:layout_below="@+id/faqpage"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes, you can use our app for free"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/q1"
+        android:id="@+id/ans1"
+        android:layout_marginBottom="15sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Is the app available in playstore?"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/q2"
+        android:layout_below="@id/ans1"
+        android:layout_marginBottom="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No, it is not available in playstore"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/q2"
+        android:id="@+id/ans2"
+        android:layout_marginBottom="15sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How can i download the app?"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/q3"
+        android:layout_below="@id/ans2"
+        android:layout_marginBottom="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You can download the APK of our app"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/q3"
+        android:id="@+id/ans3"
+        android:layout_marginBottom="15sp"
+        />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigator"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        android:background="@color/teal_200"
+        app:menu="@menu/menu"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

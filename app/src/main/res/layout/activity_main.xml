@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+        <Button
+            android:id="@+id/fromAgeBTN"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01/01/1999"
+            android:backgroundTint="#009688"
+            android:textSize="20sp"
+            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TO"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0C4E22" />
+
+        <Button
+            android:id="@+id/toAgeButton"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF009688"
+            android:text="01/01/2000"
+            android:textSize="20sp"
+            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+
+         <Button
+             android:id="@+id/CalculateAgeBTN"
+             android:layout_marginTop="30dp"
+             android:layout_marginBottom="20dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Calculate Age"
+             android:textSize="20sp"
+             android:backgroundTint="#044D87"
+             android:paddingTop="10dp"
+             android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/resultTV"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#5309D8" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/insertBTN"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert"
+            android:textSize="20sp"
+            android:backgroundTint="#044D87"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <Button
+            android:id="@+id/viewBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#044D87"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="View"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:clipToPadding="false" />
+
+
+</LinearLayout>
